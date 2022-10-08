@@ -1,0 +1,28 @@
+{
+  "$schema": "https://json.schemastore.org/nest-cli",
+  "collection": "@nestjs/schematics",
+  "sourceRoot": "src",
+  "projects": {
+    "apple": {
+      "type": "library",
+      "root": "libs/apple",
+      "entryFile": "index",
+      "sourceRoot": "libs/apple/src",
+      "compilerOptions": {
+        "tsConfigPath": "libs/apple/tsconfig.lib.json"
+      }
+    },
+    "orange": {
+      "type": "library",
+      "root": "libs/orange",
+      "entryFile": "index",
+      "sourceRoot": "libs/orange/src",
+      "compilerOptions": {
+        "tsConfigPath": "libs/orange/tsconfig.lib.json"
+      }
+    }
+  },
+  "compilerOptions": {
+    "webpack": true
+  }
+}

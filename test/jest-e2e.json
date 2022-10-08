@@ -1,0 +1,19 @@
+{
+  "moduleFileExtensions": [
+    "js",
+    "json",
+    "ts"
+  ],
+  "rootDir": ".",
+  "testEnvironment": "node",
+  "testRegex": ".e2e-spec.ts$",
+  "transform": {
+    "^.+\\.(t|j)s$": "ts-jest"
+  },
+  "moduleNameMapper": {
+    "@app/apple/(.*)": "<rootDir>/../libs/apple/src/$1",
+    "@app/apple": "<rootDir>/../libs/apple/src",
+    "@app/orange/(.*)": "<rootDir>/../libs/orange/src/$1",
+    "@app/orange": "<rootDir>/../libs/orange/src"
+  }
+}
